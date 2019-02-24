@@ -1,0 +1,85 @@
+2019-02-25 00:00:36,453 ERROR: Exception on /user/Adam [GET] [in c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Nauka\Python\WebApp\app\routes.py", line 76, in user
+    return render_template('user.html', user=user, posts=posts)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Nauka\Python\WebApp\app\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "D:\Nauka\Python\WebApp\app\templates\base.html", line 30, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\Nauka\Python\WebApp\app\templates\user.html", line 23, in block "content"
+    {% for post in user.followed_posts %}
+TypeError: 'method' object is not iterable
+2019-02-25 00:00:37,074 ERROR: Exception on /user/Adam [GET] [in c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Nauka\Python\WebApp\app\routes.py", line 76, in user
+    return render_template('user.html', user=user, posts=posts)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\adam\appdata\local\programs\python\python36-32\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Nauka\Python\WebApp\app\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "D:\Nauka\Python\WebApp\app\templates\base.html", line 30, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\Nauka\Python\WebApp\app\templates\user.html", line 23, in block "content"
+    {% for post in user.followed_posts %}
+TypeError: 'method' object is not iterable
+2019-02-25 00:02:58,761 INFO: Microblog startup [in D:\Nauka\Python\WebApp\app\__init__.py:47]
+2019-02-25 00:03:29,913 INFO: Microblog startup [in D:\Nauka\Python\WebApp\app\__init__.py:47]
+2019-02-25 00:03:32,029 INFO: Microblog startup [in D:\Nauka\Python\WebApp\app\__init__.py:47]
+2019-02-25 00:03:35,464 INFO: Microblog startup [in D:\Nauka\Python\WebApp\app\__init__.py:47]
+2019-02-25 00:15:03,774 INFO: Microblog startup [in D:\Nauka\Python\WebApp\app\__init__.py:47]
+2019-02-25 00:20:23,527 INFO: Microblog startup [in D:\Nauka\Python\WebApp\app\__init__.py:47]
+2019-02-25 00:23:49,489 INFO: Microblog startup [in D:\Nauka\Python\WebApp\app\__init__.py:47]
+2019-02-25 00:25:04,114 INFO: Microblog startup [in D:\Nauka\Python\WebApp\app\__init__.py:47]
+2019-02-25 00:27:43,394 INFO: Microblog startup [in D:\Nauka\Python\WebApp\app\__init__.py:47]
+2019-02-25 00:28:11,212 INFO: Microblog startup [in D:\Nauka\Python\WebApp\app\__init__.py:47]
+2019-02-25 00:29:21,429 INFO: Microblog startup [in D:\Nauka\Python\WebApp\app\__init__.py:47]
