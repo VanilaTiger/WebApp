@@ -7,12 +7,12 @@ class Config(object):
                               'sqlite:///' + os.path.join(basedir, 'app.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-    MAIL_SERVER = os.environ.get('MAIL_SERVER')
-    MAIL_PORT = int(os.environ.get('MAIL_PORT') or 25)
-    MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS') is not None
-    MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
-    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    ADMINS = ['aszummer@gmail.com']
+    MAIL_SERVER = os.environ.get('smtp.gmail.com')
+    MAIL_PORT = int(os.environ.get("587") or 25)
+    MAIL_USE_TLS = os.environ.get("True") is not None
+    MAIL_USERNAME = os.environ.get('flaskemailcognibe@gmail.com')
+    MAIL_PASSWORD = os.environ.get('Flask1!!!')
+    ADMINS = ['flaskemailcognibe@gmail.com']
 
     POSTS_PER_PAGE = 3
 
