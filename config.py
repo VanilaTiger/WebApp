@@ -15,6 +15,7 @@ class Config(object):
     ADMINS = ['flaskemailcognibe@gmail.com']
 
     POSTS_PER_PAGE = 3
+    LANGUAGES = ['en', 'es']
 
 #---------------------------------------------------------
 ####The easiest one is to use the SMTP debugging server from Python. This is a fake email server that accepts emails,
